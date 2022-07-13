@@ -1,9 +1,7 @@
 pipeline {
-    agent {
-        any 
-    }
+    agent any
     stages {
-        stage('Test') {
+        stage('Testing') {
             steps {
                 sh 'oc apply -f buildconfig.yaml'
             }
